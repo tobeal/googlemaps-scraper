@@ -6,7 +6,7 @@ import csv
 
 HEADER = ['id_review', 'caption', 'timestamp', 'rating', 'username', 'n_review_user', 'n_photo_user', 'url_user']
 
-def csv_writer(path='data/', outfile='gm_reviews.csv'):
+def csv_writer(path='data/', outfile='puertaDePalmas.csv'):
     targetfile = open(path + outfile, mode='w', encoding='utf-8', newline='\n')
     writer = csv.writer(targetfile, quoting=csv.QUOTE_MINIMAL)
     writer.writerow(HEADER)
